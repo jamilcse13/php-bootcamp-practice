@@ -2,17 +2,17 @@
 // get any input and print it
 echo "Type anything: ";
 $line = trim(fgets(STDIN));
-echo "You typed: " . $line . "\n";
+echo "You typed: " . $line . "\n\n";
 
 
 // .... Enter an input and print a string ....
 $a = readline('Enter a string: ');
-echo "Hello ". $a . "\n";
+echo "Hello ". $a . "\n\n";
 
 
 // .... Enter a specific (int) type of input and print it ....
 $b = (int)readline("Enter an integer: ");
-print_r("The integer is: " . $b . "\n");
+print_r("The integer is: " . $b . "\n\n");
 
 
 // .... Enter multiple input separating by a white space ....
@@ -24,7 +24,7 @@ list($var1, $var2) = explode(' ', readline());
 $var1 = (int)$var1;
 $var2 = (int)$var2;
 
-print("The sum of " . $var1 . " and " . $var2 . " is " . $var1+$var2 . "\n");
+print("The sum of " . $var1 . " and " . $var2 . " is " . $var1+$var2 . "\n\n");
 
 
 // .... Input multiple int numbers in an array ....
@@ -35,8 +35,8 @@ print_r($arr);
 
 
 // input specific number of input using fscanf()
-echo "Enter two int number: ";
+echo "Enter two int number (another way): ";
 fscanf(STDIN, "%d %d", $m, $n);
 
-echo "The sum of " . $m . " and " . $n . " is " . ($m + $n) . "\n";
+echo "The sum of " . $m . " and " . $n . " is " . ($m + $n) . "\n\n";
 ?>
